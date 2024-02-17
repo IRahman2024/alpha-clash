@@ -72,28 +72,28 @@
                     </div>
                 </div>
 
-                <!-- life -->
+                <!-- life and score -->
                 <div class="flex justify-around w-full">
                     <button class="btn rounded-full px-2 bg-purple-600">
                         Life
                         <img src="images/heart.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                       </button>
                     <button class="btn rounded-full px-4 bg-blue-700">
                         Score
                         <img src="images/monetization_on.svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                       </button>
                 </div>
             </div>
         </section>
-        <section id="score" class="hidden flex justify-center items-center min-h-screen">
+        <section id="final-score" class="hidden flex justify-center items-center min-h-screen">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-12 rounded-lg">
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span id="last-score">0</span>
                 </h1>
-                <button class="btn bg-white text-black border-0 glass btn-primary ">Play Again</button>
+                <button onclick="play()" class="btn bg-white text-black border-0 glass btn-primary ">Play Again</button>
                 <p>practice makes ypu a pro</p>
             </div>
         </section>
